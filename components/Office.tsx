@@ -1,9 +1,7 @@
-'use client';
-
 import Image from 'next/image';
 import { Reveal } from './Reveal';
 
-export default function Office() {
+export default async function Office() {
   return (
     <section className="w-full bg-secondary-bg py-20 md:py-32 px-6 md:px-13 border-b border-foreground/15">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
@@ -51,6 +49,8 @@ export default function Office() {
                   alt="Modern and calm therapy office interior"
                   fill
                   className="object-cover"
+                  quality={80}
+                  loading="lazy"
                 />
               </div>
             </Reveal>
@@ -63,6 +63,8 @@ export default function Office() {
                   alt="Dr. Maya Reynolds office details"
                   fill
                   className="object-cover"
+                  quality={80}
+                  loading="lazy"
                 />
               </div>
             </Reveal>

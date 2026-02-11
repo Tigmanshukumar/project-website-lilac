@@ -22,7 +22,7 @@ const specialties = [
   },
 ];
 
-export default function Specialties() {
+export default async function Specialties() {
   return (
     <section
       id="specialties"
@@ -61,6 +61,8 @@ export default function Specialties() {
                       alt={item.title}
                       fill
                       className="object-cover"
+                      quality={80}
+                      loading="lazy"
                     />
                   </div>
                 </div>

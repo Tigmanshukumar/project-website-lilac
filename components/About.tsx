@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from './Reveal';
 
-export default function About() {
+export default async function About() {
   return (
     <section id="about" className="w-full pt-15 pb-25 px-6 md:px-20 bg-dark-bg">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -49,6 +49,8 @@ export default function About() {
                    alt="Lilac portrait"
                    fill
                    className="object-cover"
+                   quality={80}
+                   loading="lazy"
                  />
                </div>
              </Reveal>
@@ -61,6 +63,8 @@ export default function About() {
                   alt="White flowers"
                   fill
                   className="object-cover"
+                  quality={80}
+                  loading="lazy"
                  />
                </div>
              </Reveal>

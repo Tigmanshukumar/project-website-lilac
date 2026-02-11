@@ -15,6 +15,7 @@ export default function Hero() {
               width={512}
               height={717}
               className="object-cover"
+              quality={80}
               priority
             />
           </Reveal>

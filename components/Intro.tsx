@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from './Reveal';
 
-export default function Intro() {
+export default async function Intro() {
   return (
     <section className="w-full bg-background">
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
@@ -49,6 +49,8 @@ export default function Intro() {
               alt="Coffee and journal flatlay"
               fill
               className="object-cover"
+              quality={80}
+              priority
             />
           </Reveal>
         </div>

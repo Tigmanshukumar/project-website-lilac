@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from './Reveal';
 
-export default function Issues() {
+export default async function Issues() {
   return (
     <section id="issues" className="w-full bg-background">
        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
@@ -16,6 +16,8 @@ export default function Issues() {
                 alt="Woman looking contemplative"
                 fill
                 className="object-cover"
+                quality={80}
+                loading="lazy"
               />
             </Reveal>
          </div>

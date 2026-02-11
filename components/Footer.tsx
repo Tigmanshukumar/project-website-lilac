@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Reveal } from './Reveal';
 
-export default function Footer() {
+export default async function Footer() {
   return (
     <footer className="w-full bg-background font-body">
       

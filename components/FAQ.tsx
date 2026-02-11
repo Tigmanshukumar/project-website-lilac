@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import Accordion from './Accordion';
+import AccordionClient from './AccordionClient';
 import { Reveal } from './Reveal';
 import { title } from 'node:process';
 
@@ -23,7 +23,7 @@ const faqItems = [
   }
 ];
 
-export default function FAQ() {
+export default async function FAQ() {
   return (
     <section id="faq" className="w-full py-22 px-6 md:px-30 bg-background scroll-mt-24">
       <div className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
@@ -37,6 +37,8 @@ export default function FAQ() {
               width={448}
               height={672}
               className="object-cover"
+              quality={80}
+              loading="lazy"
             />
           </Reveal>
         </div>
@@ -50,7 +52,7 @@ export default function FAQ() {
           </Reveal>
           <div className="w-full">
             <Reveal delay={0.2}>
-              <Accordion 
+              <AccordionClient 
                 items={faqItems} 
                 iconPosition="left" 
                 titleClassName="text-2xl md:text-3xl"
