@@ -8,18 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'yearly',
       priority: 1,
-    },
-    {
-      url: 'https://drmayareynolds.netlify.app/',
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://drmayareynolds.netlify.app/',
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    }
   ];
 }

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import AccordionClient from './AccordionClient';
 import { Reveal } from './Reveal';
-import { title } from 'node:process';
+
 
 const faqItems = [
   {
